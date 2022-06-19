@@ -1,0 +1,86 @@
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- Primary Meta Tags -->
+  <title>BEFIST.COM</title>
+  <meta name="title" content="BEFIST.COM" />
+  <meta
+     name="description"
+     content="Get matching profile pictures for you and a friend/loved one! "
+     />
+  <meta name="theme-color" content="#cbd5e1" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://befist.com/" />
+  <meta property="og:title" content="befist.com" />
+  <meta
+     property="og:description"
+     content="Get matching profile pictures for you and a friend/loved one! "
+     />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://befist.com/" />
+  <meta property="twitter:title" content="befist.com" />
+  <meta
+     property="twitter:description"
+     content="Get matching profile pictures for you and a friend/loved one! "
+     />
+  <style>
+     .jj {
+     transition-property: opacity;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     transition-duration: 450ms;
+     }
+  </style>
+</head>
+<body>
+  <div class="bg-slate-300 space-y-5 relative min-h-screen overflow-x-hidden">
+     <div class="flex flex-col md:flex-row px-10 py-3 bg-slate-400" id="nav">
+        <div class="">
+           <h1 class="font-bold text-2xl uppercase text-slate-700">Befist.com</h1>
+        </div>
+        <div
+           class="w-full float-right md:justify-end items-center flex space-x-6 text-slate-800"
+           >
+           <a class="hover:text-violet-500" href="/index">Random</a>
+           <a class="hover:text-violet-500" href="/anime">Anime</a>
+           <a class="hover:text-violet-500" disabled>Three</a>
+        </div>
+        </div class="">
+        <div class="grid grid-cols-2 gap-4 max-w-lg w-auto mx-auto p-3 pb-0">
+           <div onclick="downloadLeft();" class="relative">
+              <img id="left" class="duration-300 mx-auto rounded-3xl shadow-lg aspect-square peer min-w-full" src="images/1_left.jpg" />
+              <div class="bg-transparent h-full justify-center w-full flex peer-hover:opacity-100 hover:opacity-100 jj opacity-0 backdrop-blur-sm absolute top-0 rounded-3xl">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 self-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                 </svg>
+              </div>
+           </div>
+           <div onclick="downloadRight();" class="relative">
+              <img id="right" class="duration-300 mx-auto rounded-3xl shadow-lg aspect-square peer" src="images/1_right.jpg" />
+              <div class="bg-transparent h-full justify-center w-full flex peer-hover:opacity-100 hover:opacity-100 jj opacity-0 backdrop-blur-sm absolute top-0 rounded-3xl">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 self-center text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                 </svg>
+              </div>
+           </div>
+        </div>
+        <div class="text-center space-y-2 sm:space-y-0 p-3 pt-0">
+           <button class="px-8 py-2 w-full sm:w-auto bg-violet-500 mx-auto rounded-full hover:shadow-lg duration-300 text-white" onclick="replaceImage();">Random</button>
+        </div>
+        <div
+           class="p-2 w-full bg-slate-400 bottom-0 fixed text-center text-slate-700"
+           >
+           <a
+              class="text-sm hover:text-violet-700 duration-300"
+              href="https://github.com/itshoozi/Matching-PFPs"
+              target="_blank"
+              >github</a
+              >
+           <p class="font-semibold">jeremy was here</p>
+        </div>
+     </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>

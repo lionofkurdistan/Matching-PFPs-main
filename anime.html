@@ -1,0 +1,111 @@
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- Primary Meta Tags -->
+  <title>BEFIST.COM</title>
+  <meta name="title" content="BEFIST.COM" />
+  <meta
+    name="description"
+    content="Get matching profile pictures for you and a friend/loved one! "
+  />
+  <meta name="theme-color" content="#cbd5e1" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://befist.com/" />
+  <meta property="og:title" content="befist.com" />
+  <meta
+    property="og:description"
+    content="Get matching profile pictures for you and a friend/loved one! "
+    />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://befist.com/" />
+  <meta property="twitter:title" content="befist.com" />
+  <meta
+    property="twitter:description"
+    content="Get matching profile pictures for you and a friend/loved one! "
+  />
+
+  <style>
+
+    body {
+      scroll-behavior: smooth;
+    }
+    .jj {
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 450ms;
+    }
+
+    @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeIn {
+    opacity: 0;
+    transform: none;
+    animation: fadeIn 0.5s both;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+background: #cbd5e1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #324054;
+}
+  </style>
+</head>
+
+<body>
+  <div class="bg-slate-300 relative min-h-screen overflow-x-hidden relative">
+    <div class="flex flex-col md:flex-row px-10 py-3 bg-slate-400" id="nav">
+      <div class="">
+        <h1 class="font-bold text-2xl uppercase text-slate-700">Befist.com</h1>
+      </div>
+      <div
+        class="w-full float-right md:justify-end items-center flex space-x-6 text-slate-800"
+      >
+      <a class="hover:text-violet-500" href="/index">Random</a>
+      <a class="hover:text-violet-500" href="/anime">Anime</a>
+        <a class="hover:text-violet-500" disabled>Three</a>
+      </div>
+    </div>
+    <div
+      id="content"
+      class="grid 2xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 p-10 pb-20"
+    >
+    <div id="butt" onclick="load();" class="cursor-pointer order-last sm:h-full h-20 p-5 fadeIn w-full bg-slate-400 text-slate-600 font-bold rounded-2xl text-center items-center flex duration-300 hover:bg-opacity-60 bg-opacity-50">
+      <h1  class="w-full select-none">Load More</h1>
+    </div>
+
+    </div>
+    <div
+    id="bottom"
+    class="p-2 w-full bg-slate-400 absolute bottom-0 text-center text-slate-700"
+    >
+    <a
+       class="text-sm hover:text-violet-700 duration-300"
+       href="https://github.com/itshoozi/Matching-PFPs"
+       target="_blank"
+       >github</a
+       >
+    <p class="font-semibold">jeremy was here</p>
+ </div>
+  </div>
+  <script src="js/listing.js"></script>
+</body>
